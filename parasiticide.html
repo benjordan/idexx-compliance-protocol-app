@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Dental Transactional Email</title>
+		<title>Parasiticide Transactional Email</title>
 		<style>
 			/* -------------------------------------
 					GLOBAL RESETS
@@ -71,16 +71,36 @@
 			.content-block {
 				padding: 10px 50px 20px 50px;
 			}
-			.risk-box-left {
-				padding: 10px 10px 10px 50px;
-				width: 50%;
+			.content-block h2 {
+				font-weight: 500;
+				margin-bottom: 0px;
 			}
-			.risk-box-right {
-				padding: 10px 50px 10px 10px;
-				width: 50%;
+			.risk-boxes {
+				padding: 0px 50px 20px 50px;
 			}
 			.risk-box {
 				background-color: #f8f8f8;
+				display: inline-block;
+				float: left;
+				margin: 0 3% 3% 0;
+				min-height: 370px;
+				padding: 20px 25px;
+				width: 47%;
+			}
+			.risk-box img {
+				display: inline-block;
+				float: left;
+				margin-right: 10px;
+			}
+			.risk-box h2 {
+				display: inline-block;
+				float: left;
+				margin-bottom: 0;
+				width: auto;
+			}
+			.risk-box p {
+				font-size: 12px;
+				line-height: 18px;
 			}
 			.footer {
 				clear: both;
@@ -138,7 +158,9 @@
 				font-size: 14px;
 				font-weight: normal;
 				margin: 0;
-				margin-bottom: 20px; }
+				margin-bottom: 20px;
+				padding: 0;
+			}
 				p li,
 				ul li,
 				ol li {
@@ -220,20 +242,19 @@
 				border-bottom: 2px solid #D8D8D8;
 				margin: 30px 0; }
 			.header-with-image {
-				background-image: url('assets/parasiticide-illustration.png');
-				background-position: 98% 2%;
-				background-size: 38%;
-				background-repeat: no-repeat;
-				padding-right: 40%;
 				padding-top: 40px;
-				padding-bottom: 10px;
+				padding-bottom: 0px;
+				padding-right: 20px;
+			}
+			.header-image {
+				padding: 20px 20px 0 0;
 			}
 			.call-to-action .product-image {
 				padding-left: 40px;
 			}
 
 			.call-to-action .cta-content {
-				padding: 15px 50px 10px 10px;
+				padding: 15px 50px 10px 50px;
 			}
 				.call-to-action .cta-content label {
 					color: #7E7E7E;
@@ -326,7 +347,7 @@
 					<div class="content">
 
 						<!-- START CENTERED WHITE CONTAINER -->
-						<span class="preheader">A Note about {{Pet Name}}’s Oral Health Visit Today</span>
+						<span class="preheader">A Note about {{Pet Name}}’s Visit Today</span>
 
 						<table class="main" border="0" cellpadding="0" cellspacing="0">
 							<!-- START MAIN CONTENT AREA -->
@@ -334,37 +355,68 @@
 								<td class="wrapper">
 									<table border="0" cellpadding="0" cellspacing="0">
 										<tr>
-											<td class="header-with-image content-block" colspan="2">
+											<td class="header-with-image content-block" width="60%">
 												<h1>Great News!</h1>
-												<h2>{{Pet Name}}'s test for parasites was negative!</h2>
-												<p class="large">Thanks for bringing {{Pet Name}} in to see us today for a check-up. We included an IDEXX SNAP 4DX® test to screen for diseases that are spread by parasites. The test indicated that no parasites were detected, which is great news.</p>
-												<p class="large">You've done a great job keeping {{Pet Name}} safe - keep up the good work!</p>
-												<p class="large">Exposure to these infections can happen in almost any location where ticks and mosquitoes can be found.</p>
+												<h2 style="margin-bottom: 20px">{{Pet Name}}'s test for a number of serious diseases was negative!</h2>
+												<p class="large">Thanks for bringing {{Pet Name}} in to see us today for a check-up. We performed a test that screens for heartworm infections, as well as a number of infections transmitted by ticks. The test revealed that none of these were detected, which is great news.  </p>
+											</td>
+											<td class="header-image"><img src="assets/parasiticide-illustration.png" alt="" width="200"></td>
+										</tr>
+
+										<tr>
+											<td class="content-block" colspan="2">
+												<p class="large">You've done a great job - keep up the good work! Exposure to these infections can occur in almost any location where ticks and mosquitoes can be found.</p>
+												<h3 style="margin-bottom: 0px">{{Pet Name}}'s Test Results</h3>
+											</td>
+										</tr>
+										<tr>
+											<td class="risk-boxes" colspan="2">
+												<div class="risk-box">
+													<img src="assets/checkmark.png" alt="checkmark" width="24px">
+													<h3>No Heartworm Detected!</h3>
+													<p>We didn't find any evidence of heartworms today. Heartworms are parasites that are transmitted by when a mosquito bites, and the adult worms live in your dog's heart and the blood vessels of the lungs.</p>
+													<p>Symptoms may include persistent cough, fatigue, reduced exercise tolerance, decreased appetite and weight loss.</p>
+												</div>
+												<div class="risk-box">
+													<img src="assets/checkmark.png" alt="checkmark" width="24px">
+													<h3>No Lyme Detected!</h3>
+													<p>We didn't find any evidence of Lyme infection today. Lyme disease is a bacterial infection transmitted by black-legged ticks (deer ticks).</p>
+													<p>While many pets can have a Lyme infection and show no symptoms, the most common ones seen in dogs include fever, decreased appetite, swollen/painful joints, limping, and lethargy.</p>
+												</div>
+												<div class="risk-box">
+													<img src="assets/checkmark.png" alt="checkmark" width="24px">
+													<h3>No Anaplasmosis Detected!</h3>
+													<p>We didn't find any evidence of Anaplasmosis today. This is another infection that is transmitted by ticks (in this case black-legged/deer ticks and brown dog ticks).</p>
+													<p>Symptoms look a lot like Lyme and may include lack of energy, limping, swollen or painful joints, and loss of appetite.</p>
+												</div>
+												<div class="risk-box">
+													<img src="assets/checkmark.png" alt="checkmark" width="24px">
+													<h3>No Ehrlichiosis Detected!</h3>
+													<p>We didn't find any evidence of Ehrlichiosis today. Ehrlichiosis is a bacterial infection transmitted by ticks (specifically, brown dog ticks and lone star ticks).</p>
+													<p>Symptoms look a lot like Lyme and may include lack of energy, limping, swollen or painful joints, and loss of appetite.</p>
+												</div>
 											</td>
 										</tr>
 
 										<tr>
-											<td class="risk-box-left">
-												<div class="risk-box">
-													<img src="/assets/checkmark.png" alt="checkmark">
-												</div>
-											</td>
-
-											<td class="risk-box-right">
-												<div class="risk-box">
-													<img src="/assets/checkmark.png" alt="checkmark">
-												</div>
+											<td class="content-block" colspan="2">
+												<h2 style="font-weight: 600; margin-bottom: 20px;">Next Steps:</h2>
+												<p>Treatment for any of these diseases can be tough for Ricky and costly for you. By staying vigilant with regular screenings and taking proper preventive steps for Ricky, you can help protect your dog from these painful and potentially deadly diseases, and save yourself unnecessary costs in the future.</p>
+												<h3>Step 1: Stay Vigilant</h3>
+												<ul>
+													<li>Avoid areas where ticks or mosquitoes are common, if possible.</li>
+													<li>Keep up the regular tick checks - be sure to look around the ears, under the tail, in the armpits and between the toes!</li>
+													<li>Watch for the common signs associated with these diseases.</li>
+												</ul>
+												<h3>Step 2: Protect {{Pet Name}}</h3>
+												<p>When it comes to preventing heartworm disease and protecting against ticks and fleas, there are many options. We've included a special offer on the products we recommend most below, and will have them shipped to you monthly so that you can be sure that Ricky is always covered.</p>
 											</td>
 										</tr>
 
 										<tr class="alt-section call-to-action">
-											<td width="40%" class="product-image">
-												<img src="assets/parasiticide-illustration.png" alt="Parasiticide Illustration">
-											</td>
-											<td class="cta-content">
-												<label>Recommended Product for {{Pet Name}}:</label>
-												<h4>OraVet Dental Hygiene Chews for Dogs</h4>
-												<p>30 Chews | 20% off home delivery</p>
+											<td class="cta-content" colspan="2">
+												<h5 style="margin-bottom: 5px; font-size: 14px; font-weight: 500;">Recommended Product for {{Pet Name}}:</h5>
+												<p>We’ve included a $35 off discount for home delivery on the products we recommend most. Visit our e-pharmacy to learn more.</p>
 												<table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
 													<tbody>
 														<tr>
@@ -385,17 +437,9 @@
 
 										<tr>
 											<td class="content-block" colspan="2" style="padding-top: 30px;">
-												<h3>Step 3: Track {{Pet Name}}’s progress and check back in with us in two weeks.</h3>
-												<p>You are doing a great job taking care of Ricky! Being vigilant about the oral health of our animals is critically important. Periodontal disease is one of the most common health problems seen in our practice today.</p>
-												<p>80% of dogs and 70% of cats will have some form of dental disease by the age of 3, with plaque buildup being the underlying cause.   </p>
-												<p>Bad breath in and of itself may not feel like a real problem, but it can be indicative of one that is causing real pain for your pet. The plaque and bacteria in your dog's mouth can cause: </p>
-												<ul>
-													<li>Periodontal Disease</li>
-													<li>Inflamed Gums</li>
-													<li>Bleeding Gums</li>
-													<li>Appetite Loss</li>
-													<li>Tooth Loss</li>
-												</ul>
+												<h3>Step 3: Continue to Screen for Vector-Borne Disease as Part of Every Yearly Check-Up</h3>
+												<p>We'll continue to include a screen for these diseases during Ricky’s annual check-up – symptoms can be hard to detect in early stages.</p>
+
 												<hr>
 												<h3>Call us if you have questions, we are here to help ({{Clinic Phone}})</h3>
 												<p>To your dog's good health,<br>Your friends at {{Clinic Name}}</p>
